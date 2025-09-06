@@ -71,14 +71,14 @@ NODE_ENV=development
 
 1. **Register User**
 ```bash
-curl -X POST http://localhost:3000/api/auth/register \
+curl -X POST https://inventory-billing-system-wtmb.onrender.com/api/auth/register \
   -H "Content-Type: application/json" \
   -d '{"username":"testuser","email":"test@example.com","password":"password123","businessName":"Test Business"}'
 ```
 
 2. **Create Product**
 ```bash
-curl -X POST http://localhost:3000/api/products \
+curl -X POST https://inventory-billing-system-wtmb.onrender.com/api/products \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_JWT_TOKEN" \
   -d '{"name":"Laptop","description":"Gaming laptop","price":75000,"stock":10,"category":"Electronics"}'
